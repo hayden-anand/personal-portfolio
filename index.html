@@ -397,39 +397,40 @@
 
 
   <!-- ================= CONTACT ================= -->
-  <section class="contact" id="contact">
-    <h2 class="section-title">Contact</h2>
+  <!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact</h2>
 
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <p>Open to internships, collaborations, and learning opportunities.</p>
-        <p>
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:haydenanand@gmail.com">haydenanand@gmail.com</a>
-        </p>
-      </div>
-
-      <form class="contact-form" id="contact-form">
-
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-        <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">
-          This contact form is used only for professional communication.
-          Messages are securely processed via Formspree.
-        </p>
-
-      </form>
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <p>Open to internships, collaborations, and learning opportunities.</p>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:haydenanand@gmail.com">haydenanand@gmail.com</a>
+      </p>
     </div>
-  </section>
+
+    <!-- ✅ EMAILJS FORM -->
+    <form class="contact-form" id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+  <button type="submit" class="btn">Send Message</button>
+  <p id="form-status" style="margin-top:10px;font-size:0.9rem;"></p>
+</form>
+
+  </div>
+</section>
+
 
   <!-- ================= FOOTER ================= -->
   <footer>
     <p>© 2025 Hayden Anand. All rights reserved.</p>
   </footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js"></script>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
